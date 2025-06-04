@@ -1,0 +1,16 @@
+{
+  "name": "tp3-trabajo-final-sp2",
+  "version": "1.0.0",
+  "description": "TP3 Trabajo Final Sprint 2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node server.mjs"
+  },
+  "author": "Augusto Villegas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  }
+}
