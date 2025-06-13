@@ -9,6 +9,7 @@ const superheroSchema = new mongoose.Schema({
   poderes: [String],
   aliados: [String],
   enemigos: [String],
+  creador: String,
   createdAt: { type: Date, default: Date.now },
 });
 

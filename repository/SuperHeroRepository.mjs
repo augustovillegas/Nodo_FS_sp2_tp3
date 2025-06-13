@@ -11,7 +11,14 @@ class SuperHeroRepository extends IRepository {
   }
 
   async buscarPorAtributo(atributo, valor) {
-    return await SuperHero.find({ [atributo]: valor });
+    const esNumero = !isNaN(valor);
+    const expresion = new RegExp(valor, "i");
+
+    const filtro = {
+      [atributo]: esNumero ? Number(valor) : { $regex: expresion },
+    };
+
+    return await SuperHero.find(filtro);
   }
 
   async obtenerMayoresDe30() {

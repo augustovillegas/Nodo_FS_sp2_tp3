@@ -8,6 +8,8 @@ export const renderizarSuperheroe = (superheroe) => {
     Poderes: superheroe.poderes,
     Aliados: superheroe.aliados,
     Enemigos: superheroe.enemigos,
+    Creador: superheroe.creador,
+    Fecha: superheroe.createdAt
   };
 };
 
